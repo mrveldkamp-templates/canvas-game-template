@@ -59,11 +59,11 @@ document.addEventListener("mousemove", mousemoveHandlerLib);
 document.addEventListener("keydown", (e) => keyPressed[e.code] = true);
 document.addEventListener("keyup", (e) => keyPressed[e.code] = false);
 
-function mousemoveHandlerLib(event) {
+function mousemoveHandlerLib(e) {
   // Get rectangle info about canvas location
   let cnvRect = cnv.getBoundingClientRect();
 
   // Calc mouse coordinates using mouse event and canvas location info
-  mouseX = Math.round(event.clientX - cnvRect.left);
-  mouseY = Math.round(event.clientY - cnvRect.top);
+  mouseX = Math.round(e.clientX - cnvRect.left);
+  mouseY = Math.round(e.clientY - cnvRect.top);
 }
