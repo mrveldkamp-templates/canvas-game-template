@@ -1,2 +1,4 @@
-# game-library-template
-JS Game Library Template
+# canvas-game-template
+JavaScript Canvas Game Template
+game-library
+random-library
